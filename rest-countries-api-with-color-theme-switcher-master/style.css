@@ -1,0 +1,599 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 100%, 100%);
+  font-family: "Nunito Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.Dark-Mode-Body {
+  background-color: hsl(207, 26%, 17%);
+}
+
+.Countries-Container {
+  margin-bottom: 200px;
+}
+
+header {
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: hsl(0, 0%, 99%);
+}
+
+.Dark-Mode-header {
+  background-color: hsl(209, 23%, 22%);
+  margin-top: -30px;
+  color: hsl(0, 100%, 100%);
+}
+
+.header-text {
+  margin: 30px 80px;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.Dark-Mode {
+  display: flex;
+  justify-content: flex-end;
+  margin: -50px 5rem 0 0;
+  cursor: pointer;
+}
+
+.Dark-Mode-Para {
+  margin-left: 10px;
+  font-weight: 600;
+  color: hsl(207, 26%, 17%);
+}
+
+.Dark-Mode-header-para {
+  color: hsl(0, 100%, 100%);
+}
+
+.Dark-Mode ion-icon {
+  font-size: 18px;
+}
+
+/* .Dark-Mode-header-icon{
+    color: hsl(0, 100%, 100%)
+} */
+
+.Countries-section {
+  display: block;
+}
+
+.input-box {
+  height: 50px;
+  width: 27rem;
+  background-color: hsl(0, 100%, 100%);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.6px 1.95px 1.95px 2.6px;
+  margin: 40px 0 0 70px;
+  outline: none;
+  padding-left: 68px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-container-dark {
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: rgba(0, 0, 0, 0.15) 2.6px 1.95px 1.95px 2.6px;
+  color: #f2f2f2
+}
+
+.input-container ion-icon {
+  position: relative;
+  left: 100px;
+  top: 5px;
+  font-size: 20px;
+  color: hsl(0, 0%, 50%);
+}
+
+input::placeholder {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.Filtered-Region {
+  height: 50px;
+  width: 12rem;
+  background-color: hsl(0, 100%, 100%);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.6px 1.95px 1.95px 2.6px;
+  margin-top: -50px;
+  outline: none;
+  padding-left: 18px;
+  border-radius: 4px;
+  font-size: 14px;
+  position: absolute;
+  right: 100px;
+}
+
+.dark-filtered-region{
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 100%, 100%)
+}
+
+.Countries-Section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 70px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Countries-box  {
+  background-color: hsl(0, 100%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 15rem;
+  border-radius: 5px;
+  margin-top: 50px;
+  position: relative;
+  right: 6px;
+  margin-bottom: -40px;
+  padding-bottom: 80px;
+  cursor: pointer;
+}
+
+.Dark-countries-box{
+    background-color: hsl(207, 26%, 17%);
+color: hsl(0, 100%, 100%);
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.Countries-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.countries-text {
+  padding-left: 30px;
+  line-height: 20px;
+}
+
+.countries-text h3 {
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.countries-text p {
+  position: relative;
+  top: 20px;
+  font-weight: 500;
+  padding-bottom: 6px;
+}
+
+.countries-text span {
+  color: hsl(200, 15%, 8%);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.countries-text-dark-span{
+  color: hsl(0, 100%, 100%)
+}
+
+.btn-container button {
+  width: 130px;
+  height: 40px;
+  background-color: hsl(0, 100%, 100%);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.6px 1.95px 1.95px 2.6px;
+  cursor: pointer;
+  margin: 80px 70px;
+  border-radius: 5px;
+}
+
+.btn-container ion-icon {
+  font-size: 20px;
+}
+
+.btn-container span {
+  color: hsl(0, 0%, 50%);
+  position: relative;
+  top: -5px;
+  left: 3px;
+}
+
+.Countries-detail {
+  display: flex;
+}
+
+.Countries-detail img {
+  width: 30rem;
+  height: 300px;
+  margin-top: 170px;
+  position: absolute;
+  left: 50px;
+}
+
+.Countries-detail-Name {
+  margin: 200px 0 0 400px;
+}
+
+.Countries-detail-Name h1 {
+  margin-bottom: 30px;
+}
+
+.Countries-detail-Name p {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.Countries-detail-Name span {
+  color: hsl(0, 0%, 50%);
+  font-weight: 300;
+}
+
+.Countries-Domain {
+  display: flex;
+  flex-direction: column;
+  margin: 250px 0 0 200px;
+}
+
+.Countries-Domain p {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.Countries-Domain span {
+  color: hsl(0, 0%, 50%);
+  font-weight: 300;
+}
+
+.Border-countries {
+  position: absolute;
+  bottom: -110px;
+   margin-top: -100px;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: flex-start;
+}
+
+.Border-countries p{
+  margin: 50px 0 0 30px;
+}
+
+.Border-Button {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* Buttons for each border country */
+.Border-Button p {
+  width: 80px;
+  height: 35px;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 70%);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 600;
+  color: hsl(200, 15%, 8%);
+  cursor: pointer;
+  margin-top: 30px; /* remove bottom margin */
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark mode buttons */
+.Dark-countries-box .Border-Button p {
+  background-color: hsl(209, 23%, 22%);
+  border: 1px solid hsl(0, 0%, 70%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* Optional hover effect for buttons */
+.Border-Button p:hover {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 765px) {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .header-text {
+    margin: 30px 20px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .Dark-Mode {
+    position: absolute;
+    right: -70px;
+    margin-top: -50px;
+    font-size: 14px;
+  }
+
+  .Dark-Mode p {
+    margin: -3px 0 0 5px;
+  }
+
+  .Dark-Mode ion-icon {
+    font-size: 12px;
+  }
+
+  .input-container input {
+    margin: 10px 0 0 10px;
+    width: 95%;
+  }
+
+  .input-container ion-icon {
+    position: relative;
+    left: 40px;
+    top: 50px;
+  }
+
+  .Filtered-Region {
+    position: absolute;
+    left: 10px;
+    margin-top: 30px;
+  }
+
+  .Countries-Section {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    justify-content: center;
+    margin: 70px auto;
+  }
+
+  .Countries-box {
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+
+  .Countries-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .btn-container button {
+    margin: 30px 0 0 20px;
+  }
+
+  .Countries-details {
+    position: relative;
+    left: 0;
+  }
+
+  .Countries-detail img {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 130px;
+    display: block;
+  }
+
+  .Countries-detail-Name {
+    margin-top: 500px;
+    margin-left: 0;
+    position: absolute;
+    left: 20px;
+    top: 0;
+  }
+
+  .Countries-Domain {
+    margin: 760px 0 0 0;
+    position: relative;
+    right: 130px;
+  }
+
+  .Border-countries {
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Border-Button {
+    margin-right: 0;
+    margin-left: -10px;
+    margin-top: -20px;
+  }
+
+  .Border-Button p {
+    width: 40px;
+    height: 30px;
+    background-color: hsl(0, 100%, 100%);
+    border: 1px solid hsl(0, 0%, 50%);
+    text-align: center;
+    margin: 30px 0 40px 10px;
+  }
+}
+
+@media screen and (min-width: 766px) and (max-width: 1023px) {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .header-text {
+    margin-left: 100px;
+  }
+
+  .Filtered-Region {
+    position: absolute;
+    left: 90px;
+    margin-top: 30px;
+  }
+
+  .Countries-Section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    justify-content: center;
+    margin: 70px auto;
+  }
+
+  .btn-container button {
+    margin: 30px 0 0 50px;
+  }
+
+  .Countries-details {
+    position: relative;
+    left: 0;
+  }
+
+  .Countries-detail img {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 130px;
+    display: block;
+  }
+
+  .Countries-detail-Name {
+    margin-top: 500px;
+    margin-left: 0;
+    position: absolute;
+    left: 50px;
+    top: 0;
+  }
+
+  .Countries-Domain {
+    margin: 760px 0 0 0;
+    position: relative;
+    right: 130px;
+  }
+
+  .Border-countries {
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Border-countries p{
+    margin-left: 30px;
+  }
+
+  .Border-Button {
+    margin-right: 0;
+    margin-left: -10px;
+  }
+
+  .Border-Button p {
+    width: 100px;
+    height: 30px;
+    background-color: hsl(0, 100%, 100%);
+    border: 1px solid hsl(0, 0%, 50%);
+    text-align: center;
+    margin: 30px 0 40px 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .header-text {
+    margin-left: 100px;
+  }
+
+  .Filtered-Region {
+    position: absolute;
+    left: 90px;
+    margin-top: 30px;
+  }
+
+  .Countries-Section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    justify-content: center;
+    margin: 70px auto;
+  }
+
+  .btn-container button {
+    margin: 30px 0 0 20px;
+  }
+
+  .Countries-details {
+    position: relative;
+    left: 0;
+  }
+
+  .Countries-detail img {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 130px;
+    display: block;
+  }
+
+  .Countries-detail-Name {
+    margin-top: 500px;
+    margin-left: 0;
+    position: absolute;
+    left: 50px;
+    top: 0;
+  }
+
+  .Countries-Domain {
+    margin: 760px 0 0 0;
+    position: relative;
+    right: 100px;
+  }
+
+  .Border-countries {
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Border-countries p{
+    margin-left: 50px;
+  }
+
+  .Border-Button {
+    margin-right: 0;
+    margin-left: -10px;
+
+  }
+
+  .Border-Button p {
+    width: 150px;
+    height: 30px;
+    background-color: hsl(0, 100%, 100%);
+    border: 1px solid hsl(0, 0%, 50%);
+    text-align: center;
+    margin: 30px 0 40px 50px;
+  }
+}
